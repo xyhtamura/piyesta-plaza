@@ -2,92 +2,190 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Piyesta Plaza - Cyberpaean</title>
+  <title>Piyesta Plaza</title>
   <style>
     body {
-      background-color: #f8f8ff;
-      font-family: 'Courier New', Courier, monospace;
-      color: #111;
+      background: linear-gradient(135deg, #ffd6ec, #b2f0ff);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #000033;
       text-align: center;
-    }
-
-    img.logo {
-      width: 200px;
-      margin-top: 30px;
-    }
-
-    a {
-      color: #0000cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+      margin: 0;
+      padding: 0;
     }
 
     .container {
-      max-width: 800px;
       margin: 0 auto;
-      padding: 20px;
-      border: 2px dashed #888;
-      background-color: #ffffffcc;
+      padding: 40px 20px;
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 5px double #ff66cc;
+      box-shadow: 0 0 10px magenta;
     }
 
-    .album-section {
-      margin-top: 30px;
+    img.logo {
+      width: 300px;
+      max-width: 90%;
+      margin: 30px auto 10px;
+      display: block;
+      filter: drop-shadow(0 0 5px #ff00ff);
+    }
+
+    img.album-art {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      display: block;
+      border: 4px groove #ff00ff;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-family: 'Arial Black', Gadget, sans-serif;
+      background: linear-gradient(to right, #ff33cc, #6633ff);
+      color: white;
+      padding: 10px;
+      text-shadow: 2px 2px #000;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: normal;
+      margin-top: 0;
+      color: #6600cc;
+      font-style: italic;
+    }
+
+    .desc {
+      font-size: 18px;
+      margin-bottom: 20px;
+      background-color: #ffffcc;
+      padding: 10px;
+      border: 2px dashed #ff00ff;
+      display: inline-block;
+    }
+
+    a {
+      color: #0033ff;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background-color: #ffccff;
+      color: #ff0066;
     }
 
     .tracklist {
       text-align: left;
       margin: 0 auto;
-      max-width: 500px;
+      max-width: 600px;
+      background-color: #e0f7ff;
+      border: 2px solid #6600cc;
+      padding: 20px;
+      font-family: 'Courier New', monospace;
     }
 
-    .tracklist li {
-      margin: 10px 0;
+    .track {
+      margin-bottom: 20px;
+    }
+
+    audio {
+      vertical-align: middle;
+      margin-right: 10px;
+      width: 180px;
     }
 
     .download-link {
-      margin-top: 20px;
-      font-weight: bold;
+      margin-top: 30px;
+      font-size: 18px;
+      font-family: 'Impact', fantasy;
+    }
+
+    .nav {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    marquee {
+      font-size: 18px;
+      color: #ff00aa;
+      font-family: 'Lucida Console', Monaco, monospace;
+      background-color: #00000011;
+      padding: 5px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #444;
     }
   </style>
 </head>
 <body>
 
-  <!-- Replace src with your actual logo path -->
+  <!-- LOGO as page title -->
   <img src="piyesta-logo.png" alt="Piyesta Plaza Logo" class="logo">
 
   <div class="container">
-    <h1>Piyesta Plaza</h1>
-    <p>
-      <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
-    </p>
 
-    <p>
-      <strong>Cyberpaean</strong> presents <em>Piyesta Plaza</em>: a listening and memory project echoing
-      Filipino airwaves from 1985 to 1995. Featuring decade-blurred music, vaporwave overlays,
-      and hauntological textures, this is the first album in the Piyesta Plaza series.
+    <div class="nav">
+      <a href="https://instagram.com/yourhandle" target="_blank">📟 Instagram</a>
+    </div>
+
+    <p class="desc">
+      Piyesta Plaza, a vaporwave and hauntology project based in Manila.
     </p>
 
     <div class="album-section">
       <h2>Piyesta Plaza 1985 to 1995: Airwaves</h2>
-      <ol class="tracklist">
-        <li><a href="01 - Cyberpaean - Kababayan.mp3">Kababayan</a></li>
-        <li><a href="02 - Cyberpaean - Ganyan Talaga Pag Bago ang Trabaho.mp3">Ganyan Talaga Pag Bago ang Trabaho</a></li>
-        <li><a href="03 - Cyberpaean - Drive Thru.mp3">Drive Thru</a></li>
-        <li><a href="04 - Cyberpaean - Isang Saglit.mp3">Isang Saglit</a></li>
-        <li><a href="05 - Cyberpaean - Harrison Plaza.mp3">Harrison Plaza</a></li>
-        <li><a href="06 - Cyberpaean - Komplikasyon.mp3">Komplikasyon</a></li>
-        <li><a href="07 - Cyberpaean - Flight 143.mp3">Flight 143</a></li>
-        <li><a href="08 - Cyberpaean - Close.mp3">Close</a></li>
-        <li><a href="09 - Cyberpaean - Where Did I Go Wrong.mp3">Where Did I Go Wrong</a></li>
-        <li><a href="10 - Cyberpaean - Ngiti Lang.mp3">Ngiti Lang</a></li>
-      </ol>
+      <h3>by Cyberpaean</h3>
+
+      <img src="airwavesalbumart.png" alt="Airwaves Album Art" class="album-art">
+
+      <div class="tracklist">
+        <div class="track">
+          <audio controls src="01 - Cyberpaean - Kababayan.mp3"></audio>01. Kababayan
+        </div>
+        <div class="track">
+          <audio controls src="02 - Cyberpaean - Ganyan Talaga Pag Bago ang Trabaho.mp3"></audio>02. Ganyan Talaga Pag Bago ang Trabaho
+        </div>
+        <div class="track">
+          <audio controls src="03 - Cyberpaean - Drive Thru.mp3"></audio>03. Drive Thru
+        </div>
+        <div class="track">
+          <audio controls src="04 - Cyberpaean - Isang Saglit.mp3"></audio>04. Isang Saglit
+        </div>
+        <div class="track">
+          <audio controls src="05 - Cyberpaean - Harrison Plaza.mp3"></audio>05. Harrison Plaza
+        </div>
+        <div class="track">
+          <audio controls src="06 - Cyberpaean - Komplikasyon.mp3"></audio>06. Komplikasyon
+        </div>
+        <div class="track">
+          <audio controls src="07 - Cyberpaean - Flight 143.mp3"></audio>07. Flight 143
+        </div>
+        <div class="track">
+          <audio controls src="08 - Cyberpaean - Close.mp3"></audio>08. Close
+        </div>
+        <div class="track">
+          <audio controls src="09 - Cyberpaean - Where Did I Go Wrong.mp3"></audio>09. Where Did I Go Wrong
+        </div>
+        <div class="track">
+          <audio controls src="10 - Cyberpaean - Ngiti Lang.mp3"></audio>10. Ngiti Lang
+        </div>
+      </div>
 
       <p class="download-link">
-        <a href="Cyberpaean_Piyesta_Plaza_1985-1995.zip">Download Full Album (ZIP)</a>
+        👉 <a href="Cyberpaean_Piyesta_Plaza_1985-1995.zip">Download Full Album (ZIP)</a> 👈
       </p>
+    </div>
+
+    <marquee behavior="alternate" scrollamount="6">🌸 Thank you for listening! 🌸</marquee>
+
+    <div class="footer">
+      © 2025 Cyberpaean / Piyesta Plaza Project
     </div>
   </div>
 
